@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200;1,700&display=swap");
+
+/*global*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.5rem;
+  color: rgb(94, 38, 56);
+  line-height: 1.5;
+  font-family: "Poppins";
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.container {
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10rem;
+}
+
+/*styles*/
+
+.navbar {
+  height: 80px;
+}
+
+.navbar .container {
+  width: 100%;
+  position: relative;
+}
+
+.navbar-collapse {
+  -webkit-box-shadow: 0 4px 6px 1px rgb(112, 45, 68);
+  box-shadow: 0 4px 6px 1px rgb(112, 45, 68);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 13rem;
+  background-color: rgb(107, 38, 70);
+  z-index: 1000;
+  text-align: center;
+  visibility: hidden;
+  -webkit-transition: all 200s linear;
+  transition: all 200ms linear;
+  opacity: 0;
+}
+.show-navbar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-link {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 1.4rem;
+  position: relative;
+  transition: all 200ms linear;
+}
+
+li.nav-item:hover {
+  background-color: rgb(163, 123, 141);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: rgb(107, 38, 70);
+  padding-top: 2rem;
+}
+
+.navbar-toggler {
+  height: 22px;
+  width: 34px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navbar-toggler .line {
+  width: 100%;
+  height: 3px;
+  background-color: brown;
+  transition: all 200ms linear;
+}
+.navbar-toggler .line.line-3 {
+  width: 70%;
+  align-self: flex-end;
+}
+
+#our {
+  color: rgb(163, 123, 141);
+  font-size: 3.5rem;
+}
+button,
+.button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+
+.myClass {
+  padding: 3rem 0;
+}
+
+.navbar-toggler:hover .line.line-3 {
+  width: 100%;
+}
+
+.navbar-toggler .line.line-1 {
+  align-self: flex-end;
+}
+
+.navbar-toggler:hover .line.line-1 {
+  width: 70%;
+}
+
+.change-icon .line.line-1 {
+  transform: rotate(45deg) translate(20px, 7px);
+}
+
+.change-icon .line.line-2 {
+  opacity: 0;
+}
+
+.change-icon .line.line-3 {
+  width: 100% !important;
+  transform: rotate(-45deg) translate(6px, 7px);
+}
+
+.change-icon:hover .line.line-1 {
+  width: 100%;
+}
+
+.main {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.main::before,
+.main::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./img/1.jfif") center/cover no-repeat fixed;
+  top: 0;
+  transform: skewY(-3deg);
+  z-index: -1;
+}
+
+.main .container {
+  height: 330px;
+  width: 330px;
+  text-align: center;
+  border: 5px solid white;
+
+  position: relative;
+}
+
+
+
+.main h2 {
+  text-transform: capitalize;
+  font-size: 3.2rem;
+  font-weight: 500;
+  padding: 0 2rem;
+  line-height: 1.3;
+  font-family: "Poppins";
+}
+
+svg {
+  position: absolute;
+  bottom: -1px;
+  transform: rotate(-3deg);
+}
+
+.text {
+  opacity: 0.9;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+.grid {
+  display: grid;
+  column-gap: 3rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.section-title {
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.section-title img {
+  width: 110px;
+}
+
+.section-title h2 {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.about-us-item {
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.about-us-item-head {
+  background-color: rgb(107, 38, 70);
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.about-us-item-text {
+  margin: 3rem 0 1rem 0;
+}
+
+.button {
+  border: 3px solid rgb(138, 103, 119);
+  color: black;
+  margin-top: 2.5rem;
+  padding: 0.9rem 2.5rem;
+  font-weight: 500;
+  transition: all 200s linear;
+}
+
+.button:hover {
+  background-color: rgb(138, 103, 119);
+}
+
+/* catering */
+#catering .main::before, #catering .main::after, #catering .main .container::before, #catering .main .container::after
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./img/catering.jfif") center/cover no-repeat fixed;
+}
+
+.catering-item {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 500px;
+  text-align: center;
+}
+
+.catering-item .image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.catering-item .image img {
+  border-radius: 50%;
+}
+
+.catering-item .image::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(228, 226, 226);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+
+.catering-item .image:hover {
+  transform: rotate(360deg);
+}
+
+.catering-item h3 {
+  margin-top: 2rem;
+}
+
+/*menu section*/
+#food .main::before, #food .main::after, #food .main .container::before, #food .main .container::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./img/1.jfif") center/cover no-repeat fixed;
+}
+
+.menu-item {
+  margin: 1.5rem 0;
+}
+
+.menu-item .info {
+  align-self: flex-start;
+}
+
+.menu-item .info h3 {
+  margin-top: 1rem;
+  color: rgb(100, 31, 42);
+}
+
+.menu-item .image {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+
+/*team*/
+
+#team .main::before, #team .main::after, #team .main .container::before, #team .main .container::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./img/workers.jfif") center/cover no-repeat fixed;
+}
+
+
+.team-item{
+  text-align: center;
+  margin: 2rem 0;
+}
+.team-item .image{
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.team-item h3{
+  margin-top: 1rem;
+}
+
+.team-item .text{
+  margin: 1rem auto;
+}
+
+
+/*footer*/
+
+.footer{
+  border-top: 5px solid rgb(73, 28, 42);
+}
+
+.footer > .container {
+  padding: 5rem 2rem;
+}
+
+.footer-item{
+  text-align: center;
+}
+
+.footer-item:first-child > div {
+  margin-bottom: 3rem;
+}
+
+.footer-item h3{
+  margin-bottom: 1.5rem;
+  font-size: 2.6rem;
+}
+
+.footer-item ul li {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+.footer-item .text{
+  margin: auto;
+}
+
+.form-element{
+  margin: 1rem 0;
+}
+
+.form-control{
+  width: 100%;
+  border: none;
+  background-color: rgb(245, 240, 241);
+  padding: 1.4rem;
+  resize: none;
+}
+
+
+
+/* Media queries */
+@media (min-width: 480px) {
+  .main .container {
+    width: 400px;
+    height: 400px;
+  }
+  .main h2 {
+    font-size: 4.2;
+  }
+  .main .container::before,
+  .main .container::after {
+    width: 400px;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    width: 300px;
+    height: 100%;
+  }
+  .change-icon {
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
+    z-index: 1001;
+  }
+  .change-icon .line {
+    background-color: white;
+  }
+  .nav-link {
+    text-align: left;
+    padding-left: 4rem;
+  }
+  .navbar-nav {
+    padding-top: 2rem;
+  }
+  .catering-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us-grid, .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (min-width: 898px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .about-us-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .catering-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media(min-width: 1200px){
+  .team-grid{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
